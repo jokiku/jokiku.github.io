@@ -72,8 +72,8 @@
             margin-right: 10px;
         }
         .my-nav-input:focus{
-            border: 0px solid #a2a2a2;
-            box-shadow: 0px 0px 2px 1px #00c4cc;
+            border: 0 solid #a2a2a2;
+            box-shadow: 0 0 2px 1px #00c4cc;
         }
         .my-btn{
             margin: auto;
@@ -96,6 +96,9 @@
             width: 25px;
             height: 25px;
             float: right;
+        }
+        .modal-dialog{
+            margin-top: 70px !important;
         }
 
     </style>
@@ -200,7 +203,7 @@
                     <p>berlaku hingga:<br>13 Mei 2020</p>
                 </div>
                 <div class="col-md-2 center-aligned-vertical">
-                    <a class="margin-auto btn btn-info full-width">Gunakan</a>
+                    <a class="margin-auto btn btn-info full-width" data-toggle="modal" href="#myModal">Gunakan</a>
                 </div>
             </div>
         </div>
@@ -219,7 +222,7 @@
                     <p>berlaku hingga: <br> 13 Mei 2020</p>
                 </div>
                 <div class="col-md-2 center-aligned-vertical">
-                    <a class="margin-auto btn btn-info full-width">Gunakan</a>
+                    <a class="margin-auto btn btn-info full-width" data-toggle="modal" href="#myModal">Gunakan</a>
                 </div>
             </div>
 
@@ -239,7 +242,7 @@
                     <p>berlaku hingga: <br> 13 Mei 2020</p>
                 </div>
                 <div class="col-md-2 center-aligned-vertical">
-                    <a class="margin-auto btn btn-info full-width">Gunakan</a>
+                    <a class="margin-auto btn btn-info full-width" data-toggle="modal" href="#myModal">Gunakan</a>
                 </div>
             </div>
         </div>
@@ -258,7 +261,7 @@
                     <p>berlaku hingga: <br> 13 Mei 2020</p>
                 </div>
                 <div class="col-md-2 center-aligned-vertical">
-                    <a class="margin-auto btn btn-info full-width">Gunakan</a>
+                    <a class="margin-auto btn btn-info full-width" data-toggle="modal" href="#myModal">Gunakan</a>
                 </div>
             </div>
         </div>
@@ -270,7 +273,7 @@
     <script type="text/javascript">
         $(document).ready(function () {
             var recentid = null;
-            $('.details').on('click', function (e) {
+            $('.card-1').children('.details').on('click', function (e) {
                 var id = $(this).attr('id');
                 if(recentid){
                     for(var i = 0; i < document.getElementsByClassName(recentid+'-vouchers').length; i++){
@@ -285,9 +288,59 @@
                 }
 
             });
+
+            for(var i = 0; i < document.getElementsByClassName("myBtn").length; i++){
+                $(".myBtn")[i].click(function(){
+                    $("#myModal").modal();
+                });
+            }
+
         });
     </script>
 
+
+    <!-- Modal -->
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content text-center">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h3 class="modal-title"><b>Discount Coupon</b></h3>
+                </div>
+                <div class="modal-body">
+                    <div style="height: 200px; width: 70%; border: 4px solid #00c4cc; margin: 20px auto; line-height: 300px; padding: -5px">
+                        <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+                             width="100.000000px" height="100.000000px" viewBox="0 0 100.000000 100.000000"
+                             preserveAspectRatio="xMidYMid meet">
+                            <g transform="translate(0.000000,100.000000) scale(0.100000,-0.100000)"
+                               fill="#000000" stroke="none">
+                                <path d="M0 820 l0 -180 25 0 25 0 0 155 0 155 155 0 155 0 0 25 0 25 -180 0
+-180 0 0 -180z"/>
+                                <path d="M640 975 l0 -25 155 0 155 0 0 -155 0 -155 25 0 25 0 0 180 0 180
+-180 0 -180 0 0 -25z"/>
+                                <path d="M0 180 l0 -180 180 0 180 0 0 25 0 25 -155 0 -155 0 0 155 0 155 -25
+0 -25 0 0 -180z"/>
+                                <path d="M950 205 l0 -155 -155 0 -155 0 0 -25 0 -25 180 0 180 0 0 180 0 180
+-25 0 -25 0 0 -155z"/>
+                            </g>
+                        </svg>
+                    </div>
+
+                    <h5 style="font-size: 2vmax"><b>Gunakan Scanner atau scan barcode di bawah ini dengan piranti lain</b></h5>
+                    <div style="background-image: url('images/qrcode.svg'); width: 100px; height: 100px; background-size: cover; margin: auto"></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/main.js">
+    </script>
 
 
 </body>
