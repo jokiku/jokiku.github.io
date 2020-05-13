@@ -1,13 +1,77 @@
 <!DOCTYPE html>
-<html lang="en-us">
-  <head>
+<html>
+  <head lang="en-us">
     <title>Your Coupon</title>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;400&display=swap" rel="stylesheet">
-    <link href="styles/style.css" rel="stylesheet">
     <style>
       body{
-        overflow: hidden;
+        font: 30px/1.5 'sans-serif', 'Segoe UI', sans-serif;
       }
+
+      .header {
+        font-size: calc(0.1vmax + 30px);
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+      .container{
+        margin: 10px;
+      }
+      .form-control{
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+      .cont1{
+        padding: 0 !important;
+
+      }
+      .btn{
+        font-weight: 600 !important;
+        letter-spacing: 0.01rem;
+        padding: 8px !important;
+        box-sizing: border-box;
+        height: 40px;
+      }
+
+      .btn-info{
+        background-color: #00c4cc !important;
+      }
+      .bot {
+        line-height: 40px;
+      }
+      .bot p {
+        vertical-align: middle;
+      }
+
+      .btn-default{
+        border: 2px solid #0e131826 !important;
+        color: rgba(14,19,24,.7) !important;
+        padding: 8px !important;
+      }
+      .btn-default:hover{
+        border: 2px solid #0e131856 !important;
+        background: white !important;
+        transition: ease-in-out 0.3s;
+      }
+      .btn-default:not(hover){
+        transition: ease-in-out 0.3s;
+      }
+
+      .myinput{
+        border: 1px solid #0e131822 !important;
+        box-shadow: none !important;
+        padding: 20px !important;
+        box-sizing: border-box !important;
+        height: 40px !important;
+      }
+
+      .myinput:hover{
+        border-color: #a2a2a2 !important;
+      }
+      .myinput:focus{
+        border-color: #00c4cc !important;
+      }
+
+
     </style>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -17,53 +81,51 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   </head>
   <body>
-  <div class="row" style="margin-top: 8vh">
-    <span class="col-sm-3 col-xs-1"></span>
-    <div class="text-center container col-sm-6 col-xs-10">
-        <div class="row">
-          <div>
-            <p class="header">Login ke akun Anda</p>
-            <form>
-              <input class="myinput form-control" type="email" placeholder="Email">
-              <input class="myinput form-control" type="password" placeholder="Password">
-              <button class="col-xs-12 btn btn-info" type="button">Login</button>
-            </form>
-          </div>
+  <span class="col-sm-3 col-xs-1"></span>
+  <div class="text-center container col-sm-6 col-xs-10">
+      <div class="row">
+        <div>
+          <p class="header">Login ke akun Anda</p>
+          <form>
+            <input class="myinput form-control" type="email" placeholder="Email">
+            <input class="myinput form-control" type="password" placeholder="Password">
+            <button class="col-xs-12 btn btn-info" type="button">Login</button>
+          </form>
         </div>
-
-        <div class="row" style="margin-top: 20px; margin-bottom: 20px">
-          <div class="cont1 col-md-5">
-            <a style="width:100%; padding: 10px;" href="forgot_password.html">Lupa Password?</a>
-          </div>
-          <p class="col-md-2"></p>
-          <div class="cont1 col-md-5">
-            <a style="width:100%" href="/signup.html">Sign up</a>
-          </div>
-        </div>
-
-        <div class="bot row">
-          <div class="cont1 col-md-5 text-left">
-            <a style="width:100%" class="login-btn btn btn-default" href="https://facebook.com">
-              <span style="margin: 5px">
-                <img class="img" width="20" height="20" src="https://raw.githubusercontent.com/jokiku/jokiku.github.io/master/images/facebook_logo.png">
-              </span>
-              <span style="margin: auto">Login with Facebook</span>
-            </a>
-          </div>
-          <p class="col-md-2" style="margin: 0;">atau</p>
-          <div class="cont1 col-md-5 text-left">
-            <a style="width:100%" class="login-btn btn btn-default" href="https://accounts.google.com">
-              <span style="margin: 5px">
-                <img class="img" width="20" height="20" src="https://raw.githubusercontent.com/jokiku/jokiku.github.io/master/images/google_PNG19630.png">
-              </span>
-              <span style="margin: auto">Login with Google</span>
-            </a>
-          </div>
-        </div>
-
       </div>
-    <span class="col-sm-3 col-xs-1"></span>
-  </div>
+
+      <div class="row" style="margin-top: 20px; margin-bottom: 20px">
+        <div class="cont1 col-md-5">
+          <a style="width:100%; padding: 10px;" href="forgot_password.html">Lupa Password?</a>
+        </div>
+        <p class="col-md-2"></p>
+        <div class="cont1 col-md-5">
+          <a style="width:100%" href="signup.html">Sign up</a>
+        </div>
+      </div>
+
+      <div class="bot row">
+        <div class="cont1 col-md-5 text-left">
+          <a style="width:100%" class="login-btn btn btn-default" href="https://facebook.com">
+            <span style="margin: 5px">
+              <img class="img" width="20" height="20" src="images/facebook_logo.png">
+            </span>
+            <span style="margin: auto">Login with Facebook</span>
+          </a>
+        </div>
+        <p class="col-md-2" style="margin: 0;">atau</p>
+        <div class="cont1 col-md-5 text-left">
+          <a style="width:100%" class="login-btn btn btn-default" href="https://accounts.google.com">
+            <span style="margin: 5px">
+              <img class="img" width="20" height="20" src="images/google_PNG19630.png">
+            </span>
+            <span style="margin: auto">Login with Google</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  <span class="col-sm-3 col-xs-1"></span>
 
   </body>
 </html>
