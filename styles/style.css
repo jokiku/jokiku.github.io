@@ -1,0 +1,172 @@
+body{
+    font: 30px/1.5 'sans-serif', 'Segoe UI', sans-serif;
+}
+
+.header {
+    font-size: calc(0.1vmax + 30px);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.container{
+    margin: 10px;
+}
+.form-control{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.cont1{
+    padding: 0 !important;
+
+}
+.btn{
+    font-weight: 600 !important;
+    letter-spacing: 0.01rem;
+    padding: 8px !important;
+    box-sizing: border-box;
+    height: 40px;
+}
+
+.btn-info{
+    background-color: #00c4cc !important;
+}
+.bot {
+    line-height: 40px;
+}
+.bot p {
+    vertical-align: middle;
+}
+
+.btn-default{
+    border: 2px solid #0e131826 !important;
+    color: rgba(14,19,24,.7) !important;
+    padding: 8px !important;
+}
+.btn-default:hover{
+    border: 2px solid #0e131856 !important;
+    background: white !important;
+    transition: ease-in-out 0.3s;
+}
+.btn-default:not(hover){
+    transition: ease-in-out 0.3s;
+}
+
+.myinput{
+    border: 1px solid #0e131822 !important;
+    box-shadow: none !important;
+    padding: 20px !important;
+    box-sizing: border-box !important;
+    height: 40px !important;
+}
+
+.myinput:hover{
+    border-color: #a2a2a2 !important;
+}
+.myinput:focus{
+    border-color: #00c4cc !important;
+}
+
+.card-1 {
+
+}
+.card-1 .details{
+    border: 1px solid #00c4cc33;
+    min-height: 400px;
+}
+.card-2 {
+    padding: 15px;
+}
+.card-2 .details{
+    border: 1px solid #00c4cc33;
+    min-height: 200px;
+    padding: 30px 15px;
+
+}
+
+.details:hover{
+    box-shadow: 1px 1px 20px 1px rgba(30,30,30,0.3);
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.full-width {
+    width: 100%;
+}
+
+@media screen and (min-width: 992px){
+    .image-height {
+        height: 200px !important;
+    }
+
+
+
+    .image-height-2 {
+        height: 110px;
+        vertical-align: middle;
+        border-radius: 10px;
+    }
+
+    .full-width-2 {
+        width: 100%;
+    }
+
+
+    .brands {
+        vertical-align: middle !important;
+    }
+
+    .my-container {
+        padding: 20px 10%;
+    }
+
+    .padding-20{
+        padding: 20px;
+    }
+    .padding-10{
+        padding: 10px;
+    }
+
+    .text-fade {
+        color: #00000099;
+    }
+
+    .center-aligned-vertical{
+        padding: 50px;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .image-height {
+        height: 200px !important;
+    }
+
+    .full-width-2 {
+        width: 50%;
+        margin: auto;
+    }
+
+    .image-height-2 {
+        height: 150px;
+        vertical-align: middle;
+        border-radius: 10px;
+    }
+
+    .my-container {
+        padding: 20px 10%;
+    }
+
+    .padding-20{
+        padding: 20px;
+    }
+    .padding-10{
+        padding: 10px;
+    }
+
+    .text-fade {
+        color: #00000099;
+    }
+
+    .center-aligned-vertical{
+        padding: 0px;
+    }
+}
+
