@@ -59,3 +59,7 @@
     height: 25px;
     float: right;
 }
+
+@media screen and (min-width: 992px) {
+
+}
