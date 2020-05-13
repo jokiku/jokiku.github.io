@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <title>Your Coupon</title>
+    <link href="styles/style.css" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <style>
+
+        @media screen and (min-width: 768px) {
+            .nav-input {
+                min-width: 250px !important;
+
+            }
+        }
+
+        .card-2{
+            display: none;
+        }
+        .btn-default{
+            height: 34px;
+            padding: 6px 12px !important;
+            line-height: 1.42857143;
+        }
+        .logo {
+            background-image: url("images/Asset 2.png");
+            width: 30px !important;
+            height: 10px !important;
+            background-repeat: no-repeat;
+
+        }
+        .my-nav {
+            position: fixed;
+            z-index: 100;
+            margin-top: 0;
+            margin-bottom: 20px;
+            top: 0;
+            height: 50px;
+            width: 100%;
+            background-color: #ffffff;
+            box-shadow: 0px 1px 5px 1px rgba(3,3,3,0.1);
+            list-style: none;
+        }
+        .my-nav:hover{
+            box-shadow: 0px 1px 10px 1px rgba(3,3,3,0.1);
+            transition: ease-in-out all 0.5s;
+        }
+        .my-nav .container{
+            position: relative;
+        }
+        .absolute-pos{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 30%;
+        }
+        .my-nav-input{
+            border-radius: 10px;
+            outline: none;
+            padding: 6px 12px;
+            border: 1px solid #a2a2a233;
+            color: #ccc;
+            margin-right: 10px;
+        }
+        .my-nav-input:focus{
+            border: 0px solid #a2a2a2;
+            box-shadow: 0px 0px 2px 1px #00c4cc;
+        }
+        .my-btn{
+            margin: auto;
+            border: none;
+            height: 32.85px;
+            width: 32.85px;
+            border-radius: 10px;
+            outline: none;
+        }
+        .my-btn:hover{
+            background-color: #22e6ee !important;
+            transition: ease-in-out 0.5s;
+        }
+        .image-icon{
+            width: 30px;
+            height: 30px;
+            float: right;
+        }
+        .image-icon-2{
+            width: 25px;
+            height: 25px;
+            float: right;
+        }
+
+    </style>
+
+    <script type="text/javascript">
+
+    </script>
+
+</head>
+<body>
+    <nav class="my-nav">
+        <div class="container raw">
+            <div class="left col-sm-4">
+                <form class="absolute-pos">
+                    <input class="my-nav-input" type="text">
+                    <button class="btn-info my-btn"><span class="glyphicon glyphicon-search"></span></button>
+                </form>
+            </div>
+            <div class="left col-sm-4 text-center">
+                <a href="home.html"><img src="images/Asset%202.png"></a>
+            </div>
+            <div class="right col-sm-3 text-right">
+                <div class="image-icon" style="background-image: url('images/google_PNG19630.png'); background-size: cover">
+                </div>
+            </div>
+            <div class="right col-sm-1">
+                <div class="image-icon-2" style="margin: 1px;background-image: url('images/menu-rounded-solid.png'); background-size: cover">
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div style="height: 100px; width: 100%"></div>
+
+    <div class="container text-center" >
+        <div class="header" style="margin-bottom: 40px">
+            <p>Kamu mau naik apa?</p>
+        </div>
+        <div class="row container">
+            <div class="col-md-3 col-sm-6 col-xs-12 panel card-1">
+                <div class="details" id="ojol">
+                    <div class="full-width image-height" style="background-image: url('images/ojol.jpeg'); background-size: cover">
+                    </div>
+                    <div class="my-container">
+                        <h4>OJOL</h4>
+                        <br>
+                        <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12 panel card-1">
+                <div class="details" id="mrt">
+                    <div class="full-width image-height" style="background-image: url('images/mrt_jakarta.jpg'); background-size: cover">
+                    </div>
+                    <div class="my-container">
+                        <h4>MRT</h4>
+                        <br>
+                        <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12  panel card-1">
+                <div class="details" id="busway">
+                    <div class="full-width image-height" style="background-image: url('images/busway.jpeg'); background-size: cover">
+                    </div>
+                    <div class="my-container">
+                        <h4>BUSWAY</h4>
+                        <br>
+                        <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12  panel card-1">
+                <div class="details" id="taksi">
+                    <div class="full-width image-height" style="background-image: url('images/taksi.jpg'); background-size: cover">
+                    </div>
+                    <div class="my-container">
+                        <h4>TAKSI</h4>
+                        <br>
+                        <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div id="vouchers" class="raw container my-second-container">
+        <div class="card-2 ojol-vouchers">
+            <div class="details raw">
+                <div class="brands col-md-2 text-center">
+                    <div class="full-width image-height-2" style="background-image: url('images/grab_logo.png'); background-size: contain; background-repeat: no-repeat; background-position-y: center"></div>
+                    <h5><b>GRAB</b></h5>
+                </div>
+                <div class="text-left  col-md-6 padding-10">
+                    <h4><strong>Voucher diskon 30%</strong></h4>
+                    <br>
+                    <p class="text-fade">Voucher khusus GRAB FOOD untuk daerah Surabaya dengan minimal pembelian 100rb</p>
+                </div>
+                <div class="col-md-2 text-center center-aligned-vertical">
+                    <p>berlaku hingga:<br>13 Mei 2020</p>
+                </div>
+                <div class="col-md-2 center-aligned-vertical">
+                    <a class="margin-auto btn btn-info full-width">Gunakan</a>
+                </div>
+            </div>
+        </div>
+        <div class="card-2 ojol-vouchers">
+            <div class="details raw">
+                <div class="brands col-md-2 text-center">
+                    <div class="full-width image-height-2" style="background-image: url('images/grab_logo.png'); background-size: contain; background-repeat: no-repeat; background-position-y: center"></div>
+                    <h5><b>GRAB</b></h5>
+                </div>
+                <div class="text-left  col-md-6 padding-10">
+                    <h4><strong>Voucher diskon 30%</strong></h4>
+                    <br>
+                    <p class="text-fade">Voucher khusus GRAB FOOD untuk daerah Surabaya dengan minimal pembelian 100rb</p>
+                </div>
+                <div class="col-md-2 text-center center-aligned-vertical">
+                    <p>berlaku hingga: <br> 13 Mei 2020</p>
+                </div>
+                <div class="col-md-2 center-aligned-vertical">
+                    <a class="margin-auto btn btn-info full-width">Gunakan</a>
+                </div>
+            </div>
+
+        </div>
+        <div class="card-2 ojol-vouchers">
+            <div class="details raw">
+                <div class="brands col-md-2 text-center">
+                    <div class="full-width image-height-2" style="background-image: url('images/grab_logo.png'); background-size: contain; background-repeat: no-repeat; background-position-y: center"></div>
+                    <h5><b>GRAB</b></h5>
+                </div>
+                <div class="text-left  col-md-6 padding-10">
+                    <h4><strong>Voucher diskon 30%</strong></h4>
+                    <br>
+                    <p class="text-fade">Voucher khusus GRAB FOOD untuk daerah Surabaya dengan minimal pembelian 100rb</p>
+                </div>
+                <div class="col-md-2 text-center center-aligned-vertical">
+                    <p>berlaku hingga: <br> 13 Mei 2020</p>
+                </div>
+                <div class="col-md-2 center-aligned-vertical">
+                    <a class="margin-auto btn btn-info full-width">Gunakan</a>
+                </div>
+            </div>
+        </div>
+        <div class="card-2 ojol-vouchers">
+            <div class="details raw">
+                <div class="brands col-md-2 text-center">
+                    <div class="full-width image-height-2" style="background-image: url('images/grab_logo.png'); background-size: contain; background-repeat: no-repeat; background-position-y: center"></div>
+                    <h5><b>GRAB</b></h5>
+                </div>
+                <div class="text-left  col-md-6 padding-10">
+                    <h4><strong>Voucher diskon 30%</strong></h4>
+                    <br>
+                    <p class="text-fade">Voucher khusus GRAB FOOD untuk daerah Surabaya dengan minimal pembelian 100rb</p>
+                </div>
+                <div class="col-md-2 text-center center-aligned-vertical">
+                    <p>berlaku hingga: <br> 13 Mei 2020</p>
+                </div>
+                <div class="col-md-2 center-aligned-vertical">
+                    <a class="margin-auto btn btn-info full-width">Gunakan</a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center no-vouchers" style="width: 100%; height: 300px; display: none;">
+            <span class="glyphicon glyphicon-full"></span><h2 style="color: #30303090">Voucher belum tersedia</h2>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var recentid = null;
+            $('.details').on('click', function (e) {
+                var id = $(this).attr('id');
+                if(recentid){
+                    for(var i = 0; i < document.getElementsByClassName(recentid+'-vouchers').length; i++){
+                        document.getElementsByClassName(recentid+'-vouchers')[i].style.display = 'none';
+                    }
+                }
+                recentid = id;
+                let className = recentid+'-vouchers';
+                if(document.getElementsByClassName(className).length == 0) document.getElementsByClassName('no-vouchers')[0].style.display = 'block'; else document.getElementsByClassName('no-vouchers')[0].style.display = 'none';
+                for(var i = 0; i < document.getElementsByClassName(className).length; i++){
+                    document.getElementsByClassName(className)[i].style.display = 'block';
+                }
+
+            });
+        });
+    </script>
+
+
+
+</body>
+</html>
