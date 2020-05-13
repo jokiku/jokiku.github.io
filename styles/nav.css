@@ -18,20 +18,35 @@
     position: relative;
 }
 .absolute-pos{
-    position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     height: 30%;
 }
+@media screen and (max-width: 992px) {
+    .absolute-pos{
+        display: none;
+    }
+    .my-nav .text-right {
+        display: none;
+    }
+    .my-nav .col-sm-1 {
+        width: 8.33% !important;
+        float: right;
+    }
+    .my-nav .text-center {
+        width: 80.66% !important;
+        text-align: left !important;
+        float: left !important;
+    }
+}
 .my-nav-input{
     border-radius: 10px;
     outline: none;
-    padding: 6px 12px;
+    padding: 6px 1px;
     border: 1px solid #a2a2a233;
     color: #ccc;
-    margin-right: 10px;
 }
 .my-nav-input:focus{
     border: 0px solid #a2a2a2;
